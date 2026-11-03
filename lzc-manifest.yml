@@ -4,11 +4,10 @@ application:
   upstreams:
     - location: /
       backend: http://libretranslate:5000/
-
 services:
   libretranslate:
-    # upstream: libretranslate/libretranslate:1.9.6
-    image: docker.1ms.run/libretranslate/libretranslate:1.9.6
+    # upstream: libretranslate/libretranslate:v1.9.6
+    image: docker.1ms.run/libretranslate/libretranslate:v1.9.6
     environment:
       # Download the language models on first start rather than shipping them
       # in the image; they land in the persisted .local volume below.
@@ -27,7 +26,6 @@ services:
       timeout: 10s
       retries: 10
       start_period: 120s
-
 usage: |
   LibreTranslate 是自托管的机器翻译服务：翻译引擎由开源的 Argos Translate 驱动，
   **完全在本地完成翻译，不把文本发给 Google、Azure 等第三方**，同时提供网页界面与 API。
