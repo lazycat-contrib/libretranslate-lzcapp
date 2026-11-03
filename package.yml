@@ -1,0 +1,18 @@
+package: community.lazycat.app.libretranslate
+name: LibreTranslate
+version: 0.0.0
+description: "Self-hosted machine translation API and web UI, powered by Argos Translate; no third-party translation service involved."
+min_os_version: "1.5.0"
+homepage: https://libretranslate.com/
+author: LibreTranslate
+license: AGPL-3.0
+permissions:
+  required:
+    - net.internet
+locales:
+  zh:
+    name: LibreTranslate
+    description: "自托管机器翻译：本地模型翻译，不依赖 Google/Azure 等第三方服务，含网页界面与 API。"
+  en:
+    name: LibreTranslate
+    description: "Self-hosted machine translation API and web UI, powered by Argos Translate; no third-party translation service involved."
